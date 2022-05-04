@@ -128,9 +128,16 @@ generateEl.addEventListener("click", () => {
         }
 
         if (keys.includes(array[index])) {
-            mnemonic += dict[array[index]] + '  ';
+            if (array[index] == array[index].toUpperCase()) {
+                mnemonic += dict[array[index]].fontcolor("#ff4500") + '  ';
+            }else {
+                mnemonic += dict[array[index]].fontcolor("#ffd700") + '  ';
+            }
+
+        }else if (!isNaN(array[index])){
+            mnemonic += array[index].fontcolor("#000000") + '  ';
         }else {
-            mnemonic += array[index].bold() + '  ';
+            mnemonic += array[index].fontcolor("#00bfff") + '  ';
         }
 
     }
