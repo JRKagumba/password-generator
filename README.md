@@ -2,4 +2,4 @@
 Random password generator site
 
 
-try it out at randompasswordgenerator.io
+Try it out at [randompasswordgenerator.io](https://random-password-generator.io/)
