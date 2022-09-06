@@ -1,7 +1,5 @@
 # Random Password Generator
 
-![password_image_1118w_640h](https://user-images.githubusercontent.com/63820705/188714540-fa07bdb8-5c7d-4ea2-aa31-28a3a63fbf1b.png)
-
 ## Overview
 A simple site I created to play around with simple Javascript logic and some front-end development.
 
@@ -29,3 +27,6 @@ Develop the web app to randomly generate passwords based on custom parameters
 
 ### :white_square_button: Phase 2 :
 Configure a pipeline that can call one of the Text-to-Image model APIs to produce a custom image for each ranomly generated password. 
+
+
+![password_image_1118w_640h](https://user-images.githubusercontent.com/63820705/188714540-fa07bdb8-5c7d-4ea2-aa31-28a3a63fbf1b.png)
