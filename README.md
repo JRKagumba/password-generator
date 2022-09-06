@@ -1,5 +1,6 @@
 # Random Password Generator
-![password_image_smaller](https://user-images.githubusercontent.com/63820705/188709447-64844639-982a-48a1-9d65-0835a6736eef.png)
+![password_image_even_smaller](https://user-images.githubusercontent.com/63820705/188709698-d12c3dcb-9cc2-4ed7-a816-57565eb23e22.png)
+
 
 
 ## Overview
