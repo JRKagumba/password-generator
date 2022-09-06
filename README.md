@@ -1,6 +1,6 @@
 # Random Password Generator
+![password_image_smaller](https://user-images.githubusercontent.com/63820705/188709447-64844639-982a-48a1-9d65-0835a6736eef.png)
 
-![password_image](https://user-images.githubusercontent.com/63820705/188708682-63ad0e21-85b7-474a-a6e2-a9c1de842fa6.jpg)
 
 ## Overview
 A simple site I created to play around with simple Javascript logic and some front-end development.
