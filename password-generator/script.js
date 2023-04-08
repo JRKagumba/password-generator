@@ -11,7 +11,8 @@ const symbolEl = document.getElementById("symbol");
 const generateEl = document.getElementById("generate");
 const darkModeEl = document.getElementById("dark-mode");
 const exportEl = document.getElementById("export");
-const mnemonicEl = document.getElementById("mnemonic");
+const themeEl = document.getElementById("theme");
+
 
 const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
