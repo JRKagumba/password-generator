@@ -98,3 +98,41 @@ button {
     text-align: center;
     margin-top: 1rem;
 }
+
+.select-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+.select-wrapper::after {
+    content: "▼";
+    position: absolute;
+    top: 50%;
+    right: 1rem;
+    transform: translateY(-50%);
+    pointer-events: none;
+    color: #5c97b0;
+}
+
+select {
+    appearance: none;
+    background-color: #ffffff;
+    border: 1px solid #5c97b0;
+    border-radius: 5px;
+    padding: 0.5rem 1rem;
+    outline: none;
+    font-family: "Poppins", sans-serif;
+    font-size: 1rem;
+    color: #5c97b0;
+    cursor: pointer;
+    width: 100%;
+}
+
+select::-ms-expand {
+    display: none;
+}
+
+select:focus {
+    border-color: #3bc14a;
+}
+
