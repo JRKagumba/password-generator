@@ -1,11 +1,6 @@
 // mnemonicThemes.js
 export const mnemonicThemes = {
-    military: {
-        A: "Alpha",
-        B: "Bravo",
-        C: "Charlie",
-        // ...
-    },
+
     movies: {
         A: "Avatar",
         B: "Batman",
