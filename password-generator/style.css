@@ -16,6 +16,10 @@ body {
     min-height: 100vh;
 }
 
+.dark-mode {
+    background-color: #2c2c2c;
+}
+
 .pw-container {
     border-radius: 15px;
     background-color: #4E6E5D;
@@ -29,6 +33,20 @@ h1 {
     text-align: center;
     margin-bottom: 1.5rem;
     color: #F5E050;
+}
+
+button {
+    cursor: pointer;
+}
+
+#dark-mode {
+    border: none;
+    background-color: #F5E050;
+    border-radius: 15px;
+    color: #000;
+    font-weight: bold;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .form-control {
@@ -64,7 +82,7 @@ h1 {
     font-size: 1.5rem;
 }
 
-#copy {
+#copy, #export {
     background-color: #F5E050;
     border: none;
     border-radius: 15px;
@@ -72,6 +90,7 @@ h1 {
     cursor: pointer;
     font-weight: bold;
     padding: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .footer {
