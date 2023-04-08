@@ -164,8 +164,9 @@ select:focus {
     position: absolute;
     opacity: 0;
     cursor: pointer;
-    height: 1px;
-    width: 1px;
+    height: 100%;
+    width: 100%;
+    z-index: 1;
 }
 
 .custom-checkbox::before {
