@@ -61,6 +61,13 @@ function generateMnemonic(password, theme) {
         .join(" ");
 }
 
+generateEl.addEventListener("click", () => {
+    const password = generatePassword();
+    const theme = themeEl.value;
+    pwEl.innerText = password;
+    mnemonicEl.innerText = generateMnemonic(password, theme);
+});
+
 function exportPasswords(passwords, format = "txt") {
     const data = {
         txt: () => passwords.join("\n"),
@@ -76,13 +83,6 @@ function exportPasswords(passwords, format = "txt") {
     link.click();
     URL.revokeObjectURL(url);
 }
-
-generateEl.addEventListener("click", () => {
-    const password = generatePassword();
-    const theme = themeEl.value;
-    pwEl.innerText = password;
-    mnemonicEl.innerText = generateMnemonic(password, theme);
-});
 
 exportEl.addEventListener("click", () => {
     if (!pwEl.innerText) return;
