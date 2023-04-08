@@ -52,14 +52,6 @@ darkModeEl.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
 });
 
-// Add your mnemonic generation and export logic here
-// Sample user-defined mnemonic mapping
-const userMnemonicMapping = {
-    A: "Alpha",
-    B: "Bravo",
-    C: "Charlie",
-    // ...
-};
 
 function generateMnemonic(password, theme) {
     const mapping = mnemonicThemes[theme];
