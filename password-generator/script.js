@@ -8,6 +8,7 @@ const symbolEl = document.getElementById("symbol");
 const generateEl = document.getElementById("generate");
 const darkModeEl = document.getElementById("dark-mode");
 const exportEl = document.getElementById("export");
+const mnemonicEl = document.getElementById("mnemonic");
 
 const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
@@ -49,3 +50,47 @@ darkModeEl.addEventListener("click", () => {
 });
 
 // Add your mnemonic generation and export logic here
+// Sample user-defined mnemonic mapping
+const userMnemonicMapping = {
+    A: "Alpha",
+    B: "Bravo",
+    C: "Charlie",
+    // ...
+};
+
+function generateMnemonic(password) {
+    return password
+        .split("")
+        .map((char) => userMnemonicMapping[char] || char)
+        .join(" ");
+}
+
+function exportPasswords(passwords, format = "txt") {
+    const data = {
+        txt: () => passwords.join("\n"),
+        json: () => JSON.stringify(passwords, null, 2),
+        csv: () => "password\n" + passwords.map((p) => `"${p}"`).join("\n"),
+    }[format]();
+
+    const blob = new Blob([data], { type: "text/plain;charset=utf-8" });
+    const url = URL.createObjectURL(blob);
+    const link = document.createElement("a");
+    link.href = url;
+    link.download = `passwords.${format}`;
+    link.click();
+    URL.revokeObjectURL(url);
+}
+
+generateEl.addEventListener("click", () => {
+    const password = generatePassword();
+    pwEl.innerText = password;
+    mnemonicEl.innerText = generateMnemonic(password);
+});
+
+exportEl.addEventListener("click", () => {
+    if (!pwEl.innerText) return;
+
+    const passwords = [pwEl.innerText]; // Add other passwords if needed
+    const format = "txt"; // Change to "json" or "csv" for other formats
+    exportPasswords(passwords, format);
+});
