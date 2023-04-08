@@ -19,12 +19,62 @@ export const mnemonicThemes = {
         C: "China",
         // ...
     },
-    sports: {
-        A: "Archery",
-        B: "Basketball",
-        C: "Cricket",
-        // ...
-    },
+    
+sports: {
+    A: "ARCHERY",
+    B: "BASKETBALL",
+    C: "CRICKET",
+    D: "DIVING",
+    E: "EQUESTRIAN",
+    F: "FOOTBALL",
+    G: "GOLF",
+    H: "HOCKEY",
+    I: "ICE_SKATING",
+    J: "JUDO",
+    K: "KARATE",
+    L: "LACROSSE",
+    M: "MOUNTAINEERING",
+    N: "NETBALL",
+    O: "ORIENTEERING",
+    P: "PADDLEBOARDING",
+    Q: "QUIDDITCH", // A fictional sport from the Harry Potter series
+    R: "RUGBY",
+    S: "SOCCER",
+    T: "TENNIS",
+    U: "ULTIMATE_FRISBEE",
+    V: "VOLLEYBALL",
+    W: "WRESTLING",
+    X: "XARE", // A racquet sport from the Basque region
+    Y: "YOGA",
+    Z: "ZUMBA",
+    a: "apparel",
+    b: "ball",
+    c: "cleats",
+    d: "dumbbells",
+    e: "equipment",
+    f: "frisbee",
+    g: "gloves",
+    h: "helmet",
+    i: "inflator",
+    j: "jersey",
+    k: "kettlebell",
+    l: "leotard",
+    m: "mat",
+    n: "net",
+    o: "outfit",
+    p: "paddle",
+    q: "quiver", // For holding arrows in archery
+    r: "racquet",
+    s: "shoes",
+    t: "treadmill",
+    u: "uniform",
+    v: "visor",
+    w: "whistle",
+    x: "x-trainer", // Short for cross-trainer, a type of exercise machine
+    y: "yoga_mat",
+    z: "zinc_oxide_tape", // Athletic tape
+},
+
     
 animals: {
     A: "ANTELOPE",
