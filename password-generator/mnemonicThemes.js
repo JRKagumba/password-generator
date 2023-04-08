@@ -1,7 +1,7 @@
 // mnemonicThemes.js
 export const mnemonicThemes = {
 
-movies: {
+films: {
     A: "AVATAR",
     B: "BATMAN",
     C: "CASABLANCA",
