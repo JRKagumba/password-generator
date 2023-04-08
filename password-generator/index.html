@@ -15,24 +15,34 @@
             <button id="dark-mode">Toggle Dark Mode</button>
 
             <div class="form-control">
+                <div class="custom-input">
                 <label for="len">Password Length</label>
                 <input id="len" value="15" type="number" min="2" max="30" />
+                </div>
             </div>
             <div class="form-control">
-                <label for="upper">Include Uppercase Letters</label>
+                <div class="custom-checkbox">
                 <input id="upper" type="checkbox" />
+                <label for="upper">Include Uppercase Letters</label>
+                </div>
             </div>
             <div class="form-control">
+                <div class="custom-checkbox">
                 <label for="lower">Include Lowercase Letters</label>
                 <input id="lower" type="checkbox" />
+                </div>
             </div>
             <div class="form-control">
+                <div class="custom-checkbox">
                 <label for="number">Include Numbers</label>
                 <input id="number" type="checkbox" />
+                </div>
             </div>
             <div class="form-control">
+                <div class="custom-checkbox">
                 <label for="symbol">Include Symbols</label>
                 <input id="symbol" type="checkbox" />
+                </div>
             </div>
             <button class="generate" id="generate">
                 Generate Password
