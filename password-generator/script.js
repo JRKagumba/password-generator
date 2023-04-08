@@ -1,3 +1,6 @@
+// script.js
+import { mnemonicThemes } from './mnemonicThemes.js';
+
 const pwEl = document.getElementById("pw");
 const copyEl = document.getElementById("copy");
 const lenEl = document.getElementById("len");
@@ -58,10 +61,11 @@ const userMnemonicMapping = {
     // ...
 };
 
-function generateMnemonic(password) {
+function generateMnemonic(password, theme) {
+    const mapping = mnemonicThemes[theme];
     return password
         .split("")
-        .map((char) => userMnemonicMapping[char] || char)
+        .map((char) => mapping[char] || char)
         .join(" ");
 }
 
@@ -83,8 +87,9 @@ function exportPasswords(passwords, format = "txt") {
 
 generateEl.addEventListener("click", () => {
     const password = generatePassword();
+    const theme = themeEl.value;
     pwEl.innerText = password;
-    mnemonicEl.innerText = generateMnemonic(password);
+    mnemonicEl.innerText = generateMnemonic(password, theme);
 });
 
 exportEl.addEventListener("click", () => {
