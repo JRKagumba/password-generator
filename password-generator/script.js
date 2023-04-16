@@ -1,4 +1,3 @@
-// script.js
 import { mnemonicThemes } from './mnemonicThemes.js';
 
 const pwEl = document.getElementById("pw");
@@ -12,7 +11,7 @@ const generateEl = document.getElementById("generate");
 const darkModeEl = document.getElementById("dark-mode");
 const exportEl = document.getElementById("export");
 const themeEl = document.getElementById("theme");
-
+const mnemonicEl = document.getElementById("mnemonic");
 
 const upperLetters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 const lowerLetters = "abcdefghijklmnopqrstuvwxyz";
@@ -34,7 +33,10 @@ function generatePassword() {
 }
 
 generateEl.addEventListener("click", () => {
-    pwEl.innerText = generatePassword();
+    const password = generatePassword();
+    const theme = themeEl.value;
+    pwEl.innerText = password;
+    mnemonicEl.innerText = generateMnemonic(password, theme);
 });
 
 copyEl.addEventListener("click", () => {
@@ -53,21 +55,13 @@ darkModeEl.addEventListener("click", () => {
     document.body.classList.toggle("dark-mode");
 });
 
-
 function generateMnemonic(password, theme) {
     const mapping = mnemonicThemes[theme];
     return password
         .split("")
-        .map((char) => mapping[char] || char)
+        .map((char) => mapping[char.toUpperCase()] || char)
         .join(" ");
 }
-
-generateEl.addEventListener("click", () => {
-    const password = generatePassword();
-    const theme = themeEl.value;
-    pwEl.innerText = password;
-    mnemonicEl.innerText = generateMnemonic(password, theme);
-});
 
 function exportPasswords(passwords, format = "txt") {
     const data = {
