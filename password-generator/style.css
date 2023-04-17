@@ -210,3 +210,30 @@ select:focus {
     border-color: #3bc14a;
 }
 
+body.dark-mode {
+    background-color: #3c3c3c;
+}
+
+.dark-mode .pw-container {
+    background-color: #292929;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5), -5px -5px 10px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode select,
+.dark-mode .custom-input input,
+.dark-mode .custom-checkbox::before {
+    background-color: #4e4e4e;
+    box-shadow: inset 2px 2px 4px rgba(0, 0, 0, 0.5), inset -2px -2px 4px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode .custom-checkbox input:checked::before {
+    background-color: #4e4e4e;
+}
+
+.dark-mode .custom-checkbox input:checked::after {
+    border-color: #F5E050;
+}
+
+.dark-mode .custom-checkbox input:focus::before {
+    border-color: #F5E050;
+}
