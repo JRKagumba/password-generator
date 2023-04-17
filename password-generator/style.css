@@ -7,8 +7,8 @@
 }
 
 body {
-    background-color: #607D8B;
-    color: #F5E050;
+    background-color: #e0e0e0;
+    color: #222;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -16,14 +16,10 @@ body {
     min-height: 100vh;
 }
 
-.dark-mode {
-    background-color: #37474F;
-}
-
 .pw-container {
     border-radius: 15px;
-    background-color: #455A64;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.5);
+    background-color: #e0e0e0;
+    box-shadow: inset 6px 6px 12px #d1d1d1, inset -6px -6px 12px #ffffff;
     min-width: 400px;
     padding: 1.5rem;
 }
@@ -32,21 +28,26 @@ h1 {
     font-size: 2.5rem;
     text-align: center;
     margin-bottom: 1.5rem;
-    color: #F5E050;
+    color: #222;
 }
 
 button {
     cursor: pointer;
 }
 
+button:active {
+    box-shadow: inset 2px 2px 4px #d1d1d1, inset -2px -2px 4px #ffffff;
+}
+
 #dark-mode {
     border: none;
-    background-color: #F5E050;
+    background-color: #e0e0e0;
     border-radius: 15px;
-    color: #000;
+    color: #222;
     font-weight: bold;
     padding: 0.5rem;
     margin-bottom: 1rem;
+    box-shadow: 2px 2px 4px #d1d1d1, -2px -2px 4px #ffffff;
 }
 
 .form-control {
@@ -58,9 +59,9 @@ button {
 
 .generate {
     border-radius: 15px;
-    background-color: #3BC14A;
+    background-color: #e0e0e0;
     border: none;
-    color: #FFFFFF;
+    color: #222;
     cursor: pointer;
     font-size: 1.5rem;
     font-weight: bold;
@@ -68,13 +69,13 @@ button {
     margin-top: 1rem;
     width: 100%;
     text-align: center;
+    box-shadow: 2px 2px 4px #d1d1d1, -2px -2px 4px #ffffff;
 }
 
 .pw-header {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border-bottom: 3px solid #F5E050;
     padding: 1.5rem 0;
 }
 
@@ -83,14 +84,15 @@ button {
 }
 
 #copy, #export {
-    background-color: #F5E050;
+    background-color: #e0e0e0;
     border: none;
     border-radius: 15px;
-    color: #000;
+    color: #222;
     cursor: pointer;
     font-weight: bold;
     padding: 0.5rem;
     margin-bottom: 1rem;
+    box-shadow: 2px 2px 4px #d1d1d1, -2px -2px 4px #ffffff;
 }
 
 .footer {
@@ -116,16 +118,17 @@ button {
 
 select {
     appearance: none;
-    background-color: #ffffff;
-    border: 1px solid #5c97b0;
+    background-color: #e0e0e0;
+    border: none;
     border-radius: 5px;
     padding: 0.5rem 1rem;
     outline: none;
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
-    color: #5c97b0;
+    color: #222;
     cursor: pointer;
     width: 100%;
+    box-shadow: inset 2px 2px 4px #d1d1d1, inset -2px -2px 4px #ffffff;
 }
 
 select::-ms-expand {
@@ -137,15 +140,16 @@ select:focus {
 }
 
 .custom-input input {
-    background-color: #ffffff;
-    border: 1px solid #5c97b0;
+    background-color: #e0e0e0;
+    border: none;
     border-radius: 5px;
     padding: 0.5rem 1rem;
     outline: none;
     font-family: "Poppins", sans-serif;
     font-size: 1rem;
-    color: #5c97b0;
+    color: #222;
     width: 100%;
+    box-shadow: inset 2px 2px 4px #d1d1d1, inset -2px -2px 4px #ffffff;
 }
 
 .custom-input input:focus {
@@ -177,10 +181,10 @@ select:focus {
     transform: translateY(-50%);
     height: 18px;
     width: 18px;
-    background-color: #ffffff;
-    border: 1px solid #5c97b0;
+    background-color: #e0e0e0;
     border-radius: 4px;
-    z-index: 1; 
+    z-index: 1;
+    box-shadow: 2px 2px 4px #d1d1d1, -2px -2px 4px #ffffff;
 }
 
 .custom-checkbox input:checked::after {
@@ -198,7 +202,7 @@ select:focus {
 }
 
 .custom-checkbox input:checked::before {
-    background-color: #ffffff;
+    background-color: #e0e0e0;
     border-color: #5c97b0;
 }
 
