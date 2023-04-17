@@ -166,7 +166,7 @@ pointer-events: auto;
 
 .custom-checkbox input {
 position: absolute;
-opacity: 0;
+opacity: 0.5;
 cursor: pointer;
 z-index: 1;
 pointer-events: auto;
