@@ -170,7 +170,7 @@ opacity: 0.5;
 cursor: pointer;
 z-index: 1;
 pointer-events: auto;
-/* transform: translateY(-50%); */
+transform: translateY(-50%);
 }
 
 .custom-checkbox::before {
@@ -178,7 +178,7 @@ content: "";
 position: absolute;
 left: 0;
 top: 50%;
-/* transform: translateY(-50%); */
+transform: translateY(-50%);
 height: 18px;
 width: 18px;
 background-color: #4e4e4e;
@@ -197,7 +197,7 @@ height: 10px;
 width: 6px;
 border: solid #5c97b0;
 border-width: 0 2px 2px 0;
-transform: translateY(-50%) rotate(45deg);
+transform: rotate(80deg);
 z-index: 2;
 }
 
