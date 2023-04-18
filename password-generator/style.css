@@ -190,7 +190,7 @@ z-index: 1;
 .custom-checkbox input:checked::after {
 content: "";
 position: absolute;
-left: 5px;
+left: 25px;
 top: 9px;
 /* transform: translateY(-50%); */
 height: 10px;
